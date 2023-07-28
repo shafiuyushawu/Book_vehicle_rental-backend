@@ -15,4 +15,4 @@ test:
 
 production:
   <<: *default
-  database: Book_vehicle_rental_production
+  url: <%= ENV['DATABASE_URL'] %>
